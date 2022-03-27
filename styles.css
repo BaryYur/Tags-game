@@ -11,10 +11,10 @@ h1 {
 }
 
 .field {
-    width: 405px;
-    height: 405px;
-    border: 3px solid grey;
-    /* border-radius: 8px; */
+    width: 420px;
+    height: 420px;
+    border: 10px solid rgb(87, 86, 86);
+    border-radius: 8px;
     margin: 0 auto;
     position: relative;
 }
@@ -22,8 +22,7 @@ h1 {
 .cell {
     width: 100px;
     height: 100px;
-    border-radius: 8px;
-    border: 2px solid royalblue;
+    /* border-radius: 8px; */
     position: absolute;
     font-size: 25px;
     font-weight: 600;
@@ -32,4 +31,6 @@ h1 {
     justify-content: center;
     transition: all 0.3s;
     cursor: pointer;
+    color: white;
+    border: 1px solid black;
 }

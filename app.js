@@ -6,7 +6,7 @@ const cellSize = 100;
 const empty = {
     top: 0,
     left: 0
-}
+};
 
 const cells = [];
 cells.push(empty);
@@ -37,6 +37,22 @@ for (let i = 1; i <= 15; i++) {
     const cell = document.createElement('div');
     cell.className = 'cell';
     cell.innerHTML = numbers[i - 1] + 1;
+
+    if (numbers[i - 1] + 1 === 1 || numbers[i - 1] + 1 === 2 || numbers[i - 1] + 1 === 3 || numbers[i - 1] + 1 === 4) {
+        cell.style.background = 'linear-gradient(to bottom, dodgerblue, cornflowerblue)';
+    };
+
+    if (numbers[i - 1] + 1 === 5 || numbers[i - 1] + 1 === 6 || numbers[i - 1] + 1 === 7 || numbers[i - 1] + 1 === 8) {
+        cell.style.background = 'linear-gradient(to bottom, cornflowerblue, royalblue)';
+    };
+
+    if (numbers[i - 1] + 1 === 9 || numbers[i - 1] + 1 === 10 || numbers[i - 1] + 1 === 11 || numbers[i - 1] + 1 === 12) {
+        cell.style.background = 'linear-gradient(to bottom, royalblue, mediumblue)';
+    };
+
+    if (numbers[i - 1] + 1 === 13 ||numbers[i - 1] + 1 === 14 || numbers[i - 1] + 1 === 15) {
+        cell.style.background = 'linear-gradient(to bottom, mediumblue, darkblue)';
+    };
 
     const left = i % 4;//cells left
     const top = (i - left) / 4; //cells top
